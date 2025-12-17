@@ -1,25 +1,18 @@
-/* Общий фон и базовая разметка */
 .material-page {
   font-family: Inica, sans-serif;
   background-color: #ffffff;
   color: #000000;
+  min-height: 100vh;
 }
 
-/* Синяя полоса сверху на всю ширину */
-.material-top-bar {
-  width: 100%;
-  height: 120px;
-  background-color: #0066cc;
-}
-
-/* Внутренний контейнер контента */
+/* белый контейнер под Header, по центру */
 .material-inner {
   max-width: 1000px;
   margin: 40px auto 80px;
   padding: 0 40px;
 }
 
-/* Хлебные крошки */
+/* хлебные крошки */
 .material-breadcrumbs {
   font-size: 14px;
   color: #555;
@@ -35,7 +28,7 @@
   text-decoration: underline;
 }
 
-/* Заголовок материала */
+/* заголовок */
 .material-title {
   text-align: center;
   font-size: 32px;
@@ -43,14 +36,13 @@
   margin-bottom: 40px;
 }
 
-/* Основной блок: картинка + текст */
+/* картинка слева, текст справа */
 .material-content {
   display: flex;
   align-items: flex-start;
   gap: 80px;
 }
 
-/* Картинка слева */
 .material-image-wrapper {
   flex-shrink: 0;
 }
@@ -61,35 +53,24 @@
   object-fit: contain;
 }
 
-/* Текст справа */
 .material-text-block {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-/* Заголовки секций */
 .material-section-title {
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 6px;
 }
 
-/* Текст секции */
 .material-section-text {
   font-size: 14px;
   line-height: 1.5;
 }
 
-/* Список размеров выборки */
-.material-sample-list {
-  margin: 0;
-  padding-left: 18px;
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-/* Адаптив */
+/* адаптив */
 @media (max-width: 768px) {
   .material-inner {
     margin: 20px auto 40px;
@@ -104,5 +85,10 @@
 
   .material-title {
     font-size: 26px;
+  }
+
+  .material-image {
+    width: 180px;
+    height: 180px;
   }
 }
