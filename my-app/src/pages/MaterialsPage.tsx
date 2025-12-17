@@ -3,6 +3,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import MaterialCard, { type Material } from '../components/MaterialCard';
 import Header from '../components/Header';
 import { mockMaterials } from '../modules/mock'; // Импортируем моковые данные
+import './MaterialPage.css'
 
 
 //const API_BASE_URL = '/api/v1/materials';

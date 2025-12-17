@@ -1,223 +1,149 @@
-/* MaterialCard.css */
+/* MaterialCard Styles - Full compatibility with legacy design */
 
 .material-card {
-  background: #fff;
-  width: 100%;
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
   height: 500px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+  position: relative;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: Inica, sans-serif;
 }
 
+.material-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.15);
+}
 
 .card-image-container {
   width: 100%;
-  height: 200px;
+  height: 150px;
   overflow: hidden;
-  background: #f8f9fa;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 15px;
+  background: #ffffff;
+  border-radius: 5px;
 }
 
 .card-image {
-  width: 100%;
-  height: 100%;
+  width: 170px;
+  height: 150px;
   object-fit: cover;
+  border-radius: 5px;
+  display: block;
 }
 
 .card-content {
-  padding: 20px;
-  flex-grow: 1;
+  flex: 1;
   display: flex;
   flex-direction: column;
+  gap: 12px;
 }
 
 .card-title {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin: 0 0 12px 0;
-  color: #2c3e50;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #0066CC;
+  margin: 0;
   line-height: 1.3;
 }
 
 .isotopes {
-  font-size: 0.9rem;
-  color: #7f8c8d;
-  margin-bottom: 12px;
-  line-height: 1.4;
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 500;
+  color: #4AA0F6;
+  font-size: 14px;
+  padding: 8px;
+}
+
+.isotopes-badge {
+  color: #0066CC;
+  padding: 8px 12px;
+  font-size: 15px;
+  display: inline-block;
+  font-weight: 500;
 }
 
 .sample-size {
-  margin-bottom: 16px;
+  color: #4AA0F6;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 10px 0;
+  font-weight: 500;
+  font-size: 13px;
 }
 
 .sample-size strong {
   display: block;
-  font-size: 0.9rem;
-  color: #2c3e50;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
+  color: #0066CC;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .sample-size div {
-  font-size: 0.85rem;
-  color: #34495e;
-  margin-left: 8px;
+  margin: 4px 0;
+  padding-left: 12px;
+  color: #4AA0F6;
+  font-size: 13px;
   line-height: 1.4;
 }
 
-/* Исправленные стили для кнопки "Подробнее" */
+.sample-size div:before {
+  content: "• ";
+  color: #0066CC;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
 .details-link {
-  margin-top: auto;          /* Выталкивает кнопку вниз контейнера */
-  margin-bottom: 20px;       /* Отступ от нижнего края рамки карточки */
-  color: #3498db;
-  font-size: 0.9rem;
+  background: #0066CC;
+  color: white;
   text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px;
-  border: 1px solid #3498db;
-  border-radius: 6px;
-  background: transparent;
-  width: 100%;
+  padding: 10px 16px;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 14px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  width: auto;
+  height: auto;
   text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-family: Inica, sans-serif;
+  font-weight: 500;
 }
 
 .details-link:hover {
+  background: #4AA0F6;
   color: white;
-  background: #3498db;
+  transform: translateY(-2px);
 }
 
-/* MaterialsPage.css */
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.main-content {
-  padding: 20px 0;
-}
-
-.search-section {
-  margin-bottom: 30px;
-}
-
-.search-input-wrapper {
-  display: flex;
-  gap: 12px;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.search-container {
-  flex-grow: 1;
-}
-
-.search-input {
-  width: 100%;
-  padding: 12px 16px;
-  border: 2px solid #e0e0e0;
-  border-radius: 8px;
-  font-size: 1rem;
-}
-
-.search-input:focus {
-  outline: none;
-  border-color: #3498db;
-}
-
-.search-button {
-  padding: 12px 24px;
-  background: #3498db;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  white-space: nowrap;
-}
-
-.search-button:hover {
-  background: #2980b9;
-}
-
-.cards-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-  margin-top: 30px;
+.details-link:active {
+  transform: translateY(0);
 }
 
 .no-materials {
   grid-column: 1 / -1;
   text-align: center;
   padding: 40px;
-  color: #7f8c8d;
-  font-size: 1.1rem;
-}
-
-/* Адаптивность для разных экранов */
-@media (max-width: 1200px) {
-  .cards-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 900px) {
-  .cards-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .cards-container {
-    grid-template-columns: 1fr;
-  }
-  
-  .container {
-    padding: 0 15px;
-  }
-  
-  .search-input-wrapper {
-    flex-direction: column;
-  }
-  
-  .search-button {
-    width: 100%;
-  }
-}
-
-/* Header styles */
-.header {
-  background: #2c3e50;
-  color: white;
-  padding: 1rem 0;
-  margin-bottom: 30px;
-}
-
-.h1 {
-  margin: 0;
-  text-align: center;
-}
-
-.h1 a {
-  display: inline-block;
-}
-
-.h1 img {
-  height: 40px;
-  width: auto;
-}
-
-.loading-text {
-  text-align: center;
-  padding: 40px;
-  color: #7f8c8d;
-  font-size: 1.1rem;
+  color: #0066CC;
+  font-size: 18px;
+  background: #f0f8ff;
+  border-radius: 10px;
+  border: 2px dashed #4AA0F6;
+  font-weight: 500;
 }
