@@ -12,7 +12,7 @@ export const mockMaterials: Material[] = [
   {
     MaterialID: 1,
     MaterialName: "Древесина",
-    MaterialImageURL: "/public/default.jpg",
+    MaterialImageURL: logo,
     Isotopes: "C14",
     SampleSize: ["10-20 мг", "Фрагменты 1x1 см"]
   },

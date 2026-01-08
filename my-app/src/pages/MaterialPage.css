@@ -66,8 +66,10 @@
 /* Cards Grid */
 .cards-container {
   display: grid;
+  justify-content: center; /* центр по горизонтали */
+  flex-wrap: wrap;         /* чтобы карточки переносились на новые строки */
+  gap: 24px;               /* расстояние между карточками, подбери под макет */
   grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
   margin-top: 30px;
   margin-bottom: 40px;
 }
