@@ -8,16 +8,15 @@
   "theme_color": "#387ef6",
   "orientation": "portrait-primary",
   "icons": [
-  {
-    "src": "default-192.png",
-    "type": "image/png",
-    "sizes": "192x192"
-  },
-  {
-    "src": "default-512.png",
-    "type": "image/png",
-    "sizes": "512x512"
-  }
-]
-
+    {
+      "src": "/assets/default-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/default-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
 }
