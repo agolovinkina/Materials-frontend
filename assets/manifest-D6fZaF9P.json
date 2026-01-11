@@ -1,0 +1,22 @@
+{
+  "name": "Materials",
+  "short_name": "Materials",
+  "start_url": "/Materials-frontend/",
+  "scope": "/Materials-frontend/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#387ef6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/Materials-frontend/logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/Materials-frontend/logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
